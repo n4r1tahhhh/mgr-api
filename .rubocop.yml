@@ -1,0 +1,13 @@
+# 日本語でのコメントを許可
+AsciiComments:
+  Enabled: false
+
+# missing top-level class documentation comment が出ないように
+Documentation:
+  Enabled: false
+
+AllCops:
+  Exclude:
+    - db/schema.rb
+    - db/migrate/*
+    - bin/bundle
