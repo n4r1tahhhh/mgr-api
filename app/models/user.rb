@@ -1,6 +1,8 @@
+# frozen_string_literal: true
+
 class User < ApplicationRecord
-    validates :name, presence: true
-    
-    has_many :ownerships
-    has_many :submissions
+  validates :name, presence: true
+
+  has_many :ownerships
+  has_many :submissions
 end
