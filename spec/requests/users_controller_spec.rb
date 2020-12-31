@@ -27,7 +27,7 @@ RSpec.describe UsersController do
         expect { subject }
           .to change { user.reload.name }.from('Alice').to('Bob')
           .and change { user.reload.email }.from('alice@example.com').to('bob@example.com')
-          .and change { user.reload.password }.from('password').to('new_password')
+          .and change { user.reload.password_digest }
       end
     end
   end
