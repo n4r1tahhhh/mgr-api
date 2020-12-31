@@ -12,7 +12,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20_201_223_084_438) do
+ActiveRecord::Schema.define(version: 20_201_230_235_345) do
   create_table 'challenges', force: :cascade do |t|
     t.integer 'event_id', null: false
     t.string 'title'
@@ -52,6 +52,7 @@ ActiveRecord::Schema.define(version: 20_201_223_084_438) do
     t.string 'name'
     t.datetime 'created_at', precision: 6, null: false
     t.datetime 'updated_at', precision: 6, null: false
+    t.string 'password_digest'
   end
 
   add_foreign_key 'challenges', 'events'
