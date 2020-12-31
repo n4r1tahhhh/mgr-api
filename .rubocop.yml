@@ -6,6 +6,10 @@ AsciiComments:
 Documentation:
   Enabled: false
 
+# 複数行に渡ってメソッドチェーンを使う時のインデントはエンジニアに任せる
+MultilineMethodCallIndentation:
+  Enabled: false
+
 AllCops:
   Exclude:
     - db/schema.rb
