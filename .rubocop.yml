@@ -2,6 +2,9 @@
 AsciiComments:
   Enabled: false
 
+BlockLength:
+  Enabled: false
+
 # missing top-level class documentation comment が出ないように
 Documentation:
   Enabled: false
@@ -12,6 +15,5 @@ MultilineMethodCallIndentation:
 
 AllCops:
   Exclude:
-    - db/schema.rb
     - db/migrate/*
     - bin/bundle
