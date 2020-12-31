@@ -2,5 +2,5 @@
 
 Rails.application.routes.draw do
   resources :users
-  post '/auth' , to: 'token#create'
+  post '/auth', to: 'token#create'
 end
